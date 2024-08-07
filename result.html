@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Screening Results</title>
+</head>
+<body>
+    <h1>Resume Screening Results</h1>
+    <h2>Extracted Information</h2>
+    <p><strong>Skills:</strong> {{ resume_info.skills | join(", ") }}</p>
+    <p><strong>Experience:</strong> {{ resume_info.experience | join(", ") }}</p>
+    <p><strong>Education:</strong> {{ resume_info.education | join(", ") }}</p>
+    
+    <h2>Score: {{ score }}</h2>
+</body>
+</html>
